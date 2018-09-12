@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <ui:composition>
+        <!--menu-->
+        <div class="sidebar" data-image="#{request.contextPath}/resources/img/1.jpg">
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <a href="#{request.contextPath}/faces/protegido/administrador/inicio.xhtml" class="simple-text">
+                        <h:graphicImage library="img" name="logo2.png"  a:width="150" a:heigth="50" />
+                    </a>
+                </div>
+
+                <!--<ul class="nav">
+                    <c:forEach items="#{loginManagedBean.rol.permisoList}" var="permiso">
+                        <c:if test="#{permiso.estado == 1}">
+
+                            <c:if test="#{empty permiso.permisoPadre and empty permiso.permisoList}">
+                                <li><h:link outcome="#{permiso.url}"><i class="#{permiso.icon}"/><p>#{msjmenu[permiso.nombrePermiso]}</p></h:link></li>
+                            </c:if>
+                            <c:if test="#{empty permiso.permisoPadre and not empty permiso.permisoList}">
+                                <li class="dropdown">
+                                    <a class="dropdown" data-toggle="dropdown" href="#{permiso.url}"><i class="#{permiso.icon}"/> <p>#{msjmenu[permiso.nombrePermiso]}</p></a>
+                                    <ul class="dropdown-menu">
+                                        <c:forEach items="#{permiso.permisoList}" var="subItem">
+                                            <c:if test="#{subItem.estado == 1}">
+                                                <c:forEach items="#{loginManagedBean.rol.permisoList}" var="p">
+                                                    <c:if test="#{subItem.equals(p)}">
+                                                        <li><h:link outcome="#{subItem.url}" style="color: #065162"><p>#{msjmenu[subItem.nombrePermiso]}</p></h:link></li>
+                                                    </c:if>
+                                                </c:forEach>
+                                            </c:if>
+                                        </c:forEach>
+                                    </ul>
+                                </li>
+                            </c:if>
+                        </c:if>
+
+                    </c:forEach>
+
+                </ul>-->
+            </div>
+        </div>
+        <!--Fin Menú-->
+    </ui:composition>
+</html>
+

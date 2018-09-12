@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <body>
+
+        <ui:composition template="./../../WEB-INF/template/template.xhtml">
+
+            <ui:define name="content">
+                <h:form>
+                    <h1><h:outputText value="Vista Previa"/></h1>
+                    <h:panelGrid columns="2">
+                        <h:outputText value="Cedula:"/>
+                        <h:outputText value="#{usuariosManagedBean.usuario.cedula}" title="Cedula"/>
+                        <h:outputText value="Primer Nombre:"/>
+                        <h:outputText value="#{usuariosManagedBean.usuario.primerNombre}" title="PrimerNombre"/>
+                        <h:outputText value="Segundo Nombre:"/>
+                        <h:outputText value="#{usuariosManagedBean.usuario.segundonombre}" title="Segundonombre"/>
+                        <h:outputText value="Primer Apellido:"/>
+                        <h:outputText value="#{usuariosManagedBean.usuario.primerApellido}" title="PrimerApellido"/>
+                        <h:outputText value="Segundo Apellido:"/>
+                        <h:outputText value="#{usuariosManagedBean.usuario.segundoApellido}" title="SegundoApellido"/>
+                        <h:outputText value="Clave:"/>
+                        <h:outputText value="#{usuariosManagedBean.usuario.clave}" title="Clave"/>
+                        <h:outputText value="Email:"/>
+                        <h:outputText value="#{usuariosManagedBean.usuario.email}" title="Email"/>
+                        <h:outputText value="Telefono:"/>
+                        <h:outputText value="#{usuariosManagedBean.usuario.telefono}" title="Telefono"/>
+                        <h:outputText value="Fidelizacion:"/>
+                        <h:outputText value="#{usuariosManagedBean.usuario.fidelizacion}" title="Fidelizacion"/>
+                        <h:outputText value="Rol:"/>
+                        <h:outputText value="#{usuariosManagedBean.usuario.idRol}" title="IdRol"/>
+                    </h:panelGrid>
+                </h:form>
+
+                <h1> Registrar Datos de Cliente! </h1>
+                <h:form>
+                    <h1><h:outputText value="Create/Edit"/></h1>
+                    <p:panelGrid columns="2">
+                        <p:outputLabel value="IdClienteUsuario:" for="idClienteUsuario" />
+                        <p:inputText id="idClienteUsuario" value="#{usuariosRegistrarManagedBean.cliente.idClienteUsuario}" title="IdClienteUsuario" required="true" requiredMessage="The IdClienteUsuario field is required."/>
+                        <p:outputLabel value="NombreLavanderia:" for="nombreLavanderia" />
+                        <p:inputText id="nombreLavanderia" value="#{usuariosRegistrarManagedBean.cliente.nombreLavanderia}" title="NombreLavanderia" required="true" requiredMessage="The NombreLavanderia field is required."/>
+                        <p:outputLabel value="NumeroLegal:" for="numeroLegal" />
+                        <p:inputText id="numeroLegal" value="#{usuariosRegistrarManagedBean.cliente.numeroLegal}" title="NumeroLegal" required="true" requiredMessage="The NumeroLegal field is required."/>
+                        <p:outputLabel value="Direccion:" for="direccion" />
+                        <p:inputText id="direccion" value="#{usuariosRegistrarManagedBean.cliente.direccion}" title="Direccion" required="true" requiredMessage="The Direccion field is required."/>
+                        <p:outputLabel value="IdCiudad:" for="idCiudad" />
+                        <p:selectOneMenu id="idCiudad" value="#{usuariosRegistrarManagedBean.cliente.idCiudad}" required="true" requiredMessage="The IdCiudad field is required.">
+                            <f:selectItems value="#{ciudadManagedBean.listarCiudades()}" var="listCiudad" itemLabel="Seleccionar"/>
+                        </p:selectOneMenu>
+                    </p:panelGrid>
+                    <br/><br/>
+                    <h:commandButton class="btn btn-primary" value="Registrar" action="#{usuariosRegistrarManagedBean.registrarClient()}"/>
+                    <br/>
+
+                </h:form>
+
+
+
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

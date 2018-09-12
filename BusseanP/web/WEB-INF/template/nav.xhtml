@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition>
+        <!--Navbar-->
+
+        <nav class="navbar navbar-default navbar-fixed">    
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Menú</span>
+                        <span class="fa fa-list-ul"/>
+                    </button>
+                    <!--<a class="navbar-brand">Navbar</a>-->
+
+
+                </div>
+
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" style='text-decoration:none;color:black'>
+                            <span>#{msjbtn.btnidiomas}</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <h:form>
+                                <h:selectOneMenu class="form-control" value="#{uIController.idioma}">
+                                    <f:selectItems value="#{uIController.listaIdiomas}"  itemValue=""/>
+                                </h:selectOneMenu>
+                                <h:commandButton actionListener="#{uIController.CambioIdioma()}" value="#{msjbtn.btncambiar}" class="btn btn-success"/>
+                            </h:form>
+                        </ul>-->
+                    </li>
+                </ul>
+                <h:form>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+
+
+                            <li class="dropdown">
+
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style='text-decoration:none;color:black'>
+                                    <span>#{loginManagedBean.usuario.idRol.nombreRol} - #{loginManagedBean.usuario.primerNombre} #{loginManagedBean.usuario.primerApellido}</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <p:commandLink action="#{seguridadManagedBean.cerrarSesion()}">
+                                            <i class="fa fa-sign-out"></i> Salir
+                                        </p:commandLink>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </h:form>
+            </div>
+        </nav>
+        <!--Fin Navbar-->
+    </ui:composition>
+</html>
+
+
+

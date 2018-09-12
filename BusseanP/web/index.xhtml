@@ -1,14 +1,421 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
     <h:head>
-        <title>Facelet Title</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/bootstrap-social.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" href="resources/resources/img/logo1.png"/>
+        <link href="resources/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/estilo.css" rel="stylesheet" type="text/css"/>
+        <title>Bussean</title>
     </h:head>
     <h:body>
-        Hello from Facelets
-        <br />
-        <h:link outcome="welcomePrimefaces" value="Primefaces welcome page" />
+        <div class=" container-fluid ">
+            <!-- navegacion -->
+            <nav class="  fijo row borde navbar  navbar-expand-lg navbar-light bg-light ">
+                <a class="navbar-brand" href="index.html  ">
+                    <img src="resources/img/logo1.png"  class="logo d-inline-block align-top" alt=""/>
+                    Bussean
+                </a>
+                <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div  class="collapse navbar-collapse justify-content-end" id="navbarText"> 
+                    <ul class="c  menu  navbar-nav  ">
+                        <li class="  nav-item active">
+                            <a class=" nav-link" href="index.xhtml">Inicio </a>
+                        </li>
+                        <li class="  nav-item">
+                            <a class="nav-link" href="acercaNosotros.xhtml">Acerca de Nosotros</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class=" nav-link" href="contactanos/index.html">Contáctanos</a>
+                        </li>  
+
+                        <li class=" nav-item"> 
+                            <a href="ingresar.html" class=" nav-link">Ingresar</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- HEADER -->
+
+            <div class=" header row">
+                <div class="col aling-end">
+                    <div class="row ">
+                        <div class=" col-3"></div>
+                        <div class=" col-6"></div>
+                        <div class=" col-3"></div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-12 ">
+                            <h1 class="inf"> COMPARTE CON NOSOTROS ESTA EXPERIENCIA</h1>
+                            <P class="inf1"> Se parte de nosotros </P>
+                        </div>
+                    </div>
+                    <div class="row btnhea" >
+                        <div class="  col-sm-2 col-md-3 col-4"></div>
+                        <div class=" col-sm-8 col-md-6 col-4" >
+                            <button type="button" id="btnhe"  class=" btnhe btn ">Registrarse</button>
+                        </div>
+                        <div class=" col-sm-2 col-md-3  col-4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- portafolio -->
+
+            <div class="portafolio row ">
+                <div class="col-12">
+                    <div class=" p1  row">
+                        <div class="  prepod col-sm-12 col-md-6  col-lg-4 ">
+                            <!-- card -->
+                            <div class=" catalogo card " style="width: 18rem;">
+                                <img class="card-img-top" src="resources/img/catalogo/c1.jpg" alt="Card image cap"/>
+                                <div class=" catext card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <div class="prepod  col-sm-12 col-md-6  col-lg-4">
+                            <!-- card -->
+                            <div class=" catalogo card " style="width: 18rem;">
+                                <img class="card-img-top" src="resources/img/catalogo/c2.jpg" alt="Card image cap"/>
+                                <div class=" catext card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <!-- end card -->
+
+
+                        </div>
+                        <div class="prepod  col-sm-12 col-md-12  col-lg-4">
+
+                            <!-- card -->
+                            <div class=" catalogo card " style="width: 18rem;">
+                                <img class="card-img-top" src="resources/img/catalogo/c3.jpg" alt="Card image cap"/>
+                                <div class=" catext card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <!-- end card -->
+
+
+                        </div>
+                    </div>
+
+
+                    <div class=" p2 row">
+
+                        <div   class="  col-12">
+
+                            <button  tabindex="0" id="verMas" data-toggle="tooltip" title="Ver más productos" type="button" class="btnVerMas btn btn-dark" >Ver mas...</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+
+            <div class=" row">
+
+                <div class="fti bg-dark col-12">
+
+
+                    <!--Footer-->
+                    <footer class=" page-footer font-small mdb-color lighten-3 pt-4 mt-4">
+
+                        <!--Footer Links-->
+                        <div class="container text-center text-md-left">
+                            <div class="row my-4">
+
+                                <!--First column-->
+                                <div class="col-md-4 col-lg-3 ">
+                                    <h5 class="text-uppercase mb-4 font-weight-bold text-light">Acerca de la Compañia</h5>
+                                    <p class="text-light">Es una empresa con una alta calidad tanto en el servicio al cliente como la variedad de productos de aseo para su negocio..</p>
+
+                                </div>
+                                <!--/.First column-->
+
+                                <hr class="clearfix w-100 d-md-none">
+
+                                    <!--Second column-->
+                                    <div class="col-md-2 col-lg-3 ml-auto">
+                                        <h5 class="text-uppercase mb-4 font-weight-bold text-light">Acerca</h5>
+                                        <ul class="list-unstyled">
+                                            <p>
+                                                <!-- Button trigger modal -->
+                                                <a class="text-light" href="#!" data-toggle="modal" data-target="#exampleModalCenter">
+                                                    AVISO DE PRIVACIDAD
+                                                </a>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLongTitle">AVISO DE PRIVACIDAD</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">a</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <br/>
+                                                                De acuerdo con lo dispuesto en la Ley 1581 de 2012 y sus decretos reglamentarios vigentes, TECNODETERGENTES DE COLOMBIA, institución de orden legal con personería jurídica, de derecho privado, de carácter corporativo, gremial y privado, creada por medio del Decreto Ejecutivo No.669 del 3 de agosto de 1910 y 1807 del 29 de octubre de 1915, encargada de la ejecución y cumplimiento de las funciones establecidas por el legislador y el Gobierno Nacional, especialmente en el Código de Comercio, el Decreto 1074 de 2015 y demás normas complementarias, con domicilio en Soacha – Cundinamarca , Cra 17 # 39A -17 Sur, en calidad de responsable de tratamiento de información personal, informa a los usuarios, afiliados, inscritos, clientes, beneficiarios, colaboradores, contratistas y/o proveedores, entre otros, que hayan facilitado o que en el futuro faciliten sus datos personales mediante su página web www.Bussean.com o través de otros medios distintos ya sean físicos o electrónicos, que los mismos serán incluidos en nuestras bases de datos que serán objeto de inscripción ante el Registro Nacional de Bases de Datos que administra la Superintendencia de Industria y Comercio. 
+                                                                <br/>
+                                                                TECNODETERGENTES DE COLOMBIA informa que en virtud de la normatividad vigente en materia de protección de datos personales, se han adoptado medidas de seguridad y control para la protección de sus datos de carácter personal. 
+                                                                <br/>
+                                                                TECNODETERGENTES DE COLOMBIA tiene implementadas medidas de seguridad de carácter técnico, legal, organizacional y físicas tendientes a proteger los datos personales que reposan en sus bases de datos y/o archivos; de igual forma informamos a todos los titulares de este tipo de información que este tipo de medidas son y serán igualmente exigidas a todos los encargados de tratamiento de información personal a los que TECNODETERGENTES DE COLOMBIA encargue realizar tratamiento de datos personales. 
+                                                                <br/>
+                                                                Los titulares de la información de carácter personal, a través de su consentimiento, libre, previo, expreso e informado aceptan que sus datos personales podrán ser recolectados, almacenados, usados, circulados, transferidos, transmitidos o suprimidos dentro de las siguientes finalidades que TECNODETERGENTES DE COLOMBIA determina a continuación: 
+                                                                <br/>
+                                                                1. Tratamiento de información personal por competencia legal explicita: 
+                                                                a. La Cámara podrá tratar datos personales sin previa autorización del titular en todos los casos en que estos sean de naturaleza pública. Es decir, que todos los datos recogidos por medio de los Registros Públicos no requerirán autorización por parte del titular para su tratamiento. Lo anterior en concordancia con el artículo 10 de la Ley 1581 de 2012. 
+                                                                <br/>
+                                                                Parágrafo: Los datos obtenidos en desarrollo de su función registral solamente serán actualizados en las oportunidades, formalidades y según las tarifas previstas en la ley para tal fin. Publicado el 21 de diciembre de 2015 
+
+                                                                <br/><br/>
+                                                                2. Tratamiento de información personal de usuarios y afiliados: 
+                                                                a. Administrar la información de carácter personal de los usuarios y/o afiliados presentes y futuros de los servicios ofrecidos por TECNODETERGENTES DE COLOMBIA. 
+                                                                b. Recibir invitaciones y cualquier evento organizado por TECNODETERGENTES DE COLOMBIA. 
+                                                                c. Recibir comunicaciones informativas, comerciales y/o publicitarias por cualquier medio físico o electrónico (correo, SMS, MMS, fax, redes sociales, etc.) sobre las actividades, productos y servicios ofrecidos por TECNODETERGENTES DE COLOMBIA, sus aliados comerciales y/o estratégicos con los se pacte algún acuerdo institucional. 
+                                                                d. Gestionar de forma correcta procesos de cobranzas de ser necesarios. 
+                                                                <br/>
+                                                                3. Tratamiento de información personal de trabajadores de TECNODETERGENTES DE COLOMBIA. 
+                                                                a. Gestionar de forma correcta la relación contractual. 
+                                                                b. Enviar comunicaciones de tipo interno. 
+                                                                c. Gestionar la participación de empleados en programas corporativos o sociales. 
+                                                                d. Administrar los datos del colaborador y su familia (incluidos los datos de menores de edad previa autorización de sus padres o representantes), para temas relacionados con la afiliación a las cajas de compensación familiar, medicina prepagada, remuneraciones, contribuciones, obligaciones, prestaciones, impuestos y demás información necesaria (formación, entre otros), por parte del área de Gestión Humana. 
+                                                                e. Administrar la correcta incorporación de los datos a los expedientes del personal y la generación de documentos y datos solicitados por el colaborador o por quien este autorice. 
+                                                                f. Gestionar el acceso y control a las instalaciones físicas y activos de la Tecnodetergentes de Colombia y entidades anexas, a través de los medios dispuestos para ello. 
+                                                                g. Gestionar los datos personales para la correcta asignación de herramientas de trabajo. 
+                                                                h. Gestionar los datos de carácter personal relativos al desempeño, habilidades y competencias frente a la relación laboral. 
+                                                                i. Administrar los números de cuentas bancarias para asuntos relativos al pago de nómina. 
+                                                                j. Desarrollar y gestionar procesos de reclutamiento, selección y contratación de personal. 
+                                                                k. Reportar información y pagos a terceros tales como fondos de empleados, entidades financieras, entre otros. 
+                                                                <br/>
+                                                                4. Tratamiento de información personal de proveedores y contratistas: 
+                                                                a. Verificar el cumplimiento de las políticas de la entidad en materia de selección y contratación de proveedores. 
+                                                                b. Gestionar de forma correcta la relación contractual. 
+                                                                c. Desarrollar procesos de selección, evaluación y adjudicación de contratos para contratistas y/o proveedores. 
+                                                                d. Ser proveedor de otras entidades de TECNODETERGENTES DE COLOMBIA o de terceros con los que esta Entidad considere que ello es viable, lo cual comprende suministrar u obtener referencias. 
+                                                                e. Remitirle a través de cualquier canal de comunicación, información sobre productos y/o servicios de la TECNODETERGENTES DE COLOMBIA o de sus entidades anexas o de los eventos que éstas organicen. 
+                                                                <br/>
+                                                                En el evento que TECNODETERGENTES DE COLOMBIA realice tratamiento de datos de carácter personal de tipo sensible, solicitará el consentimiento previo y explícito a los titulares e informará que por tratarse de datos sensibles, el titular no está obligado a autorizar su tratamiento. 
+                                                                TECNODETERGENTES DE COLOMBIA informa a todos los titulares de información de carácter personal que según la normatividad vigente en materia de protección de datos personales le asisten los siguientes derechos: conocer, actualizar, rectificar, suprimir, revocar la autorización, solicitar prueba de la autorización otorgada, ser informado respecto del uso que le ha dado a sus datos personales; y consultar de forma gratuita los datos personales previamente autorizados., excepto los datos obtenidos en desarrollo de su función registral, los cuales están sujetos a los procedimientos, formalidades y tarifas previstos en la normatividad legal vigente. 
+                                                                Usted podrá ejercer su derecho de habeas data ante TECNODETERGENTES DE COLOMBIA mediante los siguientes canales: 
+                                                                a) Envío por correo físico a la siguiente dirección: Cra 17 # 39A -17 Sur  Soacha-Cundinamarca. 
+                                                                b) Correo electrónico:. 
+                                                                <br/>
+                                                                La política de protección de datos personales de la TECNODETERGENTES DE COLOMBIA  puede ser consultada en el sitio web www.Bussean.com
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--fin modal-->
+                                            </p>
+                                            <!-- fin del 1p -->
+                                            <!-- SEGUNOD P -->
+                                            <p>
+                                                <!-- Button trigger modal -->
+                                                <a class="text-light" href="#!" data-toggle="modal" data-target="#exampleModalCenter1">
+                                                    TERMINOS Y CONDICIONES
+                                                </a>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLongTitle">TERMINOS Y CONDICIONES</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true"></span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <br/>
+                                                                Cuando un usuario accede a la página Bussean de TECNODETERGENTES DE COLOMIBA lo hace bajo su total responsabilidad y por tanto, acepta plenamente y sin reservas el contenido de los términos y condiciones de uso de la página Web. Bussean se reserva, en todos los sentidos, el derecho de actualizar y modificar en cualquier momento y de cualquier forma, de manera unilateral y sin previo aviso, las presentes condiciones de uso y los contenidos de la página.
+                                                                La prestación del servicio de la página es de carácter libre y gratuito para los usuarios y se rige por los términos y condiciones que se incluyen a continuación, los cuales se entienden como conocidos y aceptados por los usuarios del sitio:
+                                                                <br/><br/>
+                                                                2. Copyright
+                                                                Esta página de Internet y su contenido, incluyendo los textos, gráficos, logos, animaciones y sonidos, son de propiedad de TECNODETERGENTES DE COLOMBIA. Está prohibida su reproducción total o parcial, su traducción, inclusión, transmisión, almacenamiento o acceso a través de medios analógicos, digitales o de cualquier otro sistema o tecnología creada, sin autorización previa y escrita del TECNODETERGENTES DE COLOMBIA.
+                                                                <br/>
+
+
+                                                                Los usuarios pueden recuperar, exhibir, imprimir, copiar o descargar cualquier material de este sitio exclusivamente para uso personal y no comercial, siempre y cuando se haga expresa mención de la propiedad en cabeza de TECNODETERGENTES DE COLOMBIA.
+                                                                Con respecto a los contenidos que aparecen en la página Web del Ministerio, el usuario se obliga a:
+                                                                <br/>
+
+                                                                • Usar los contenidos de forma diligente, correcta y lícita.
+                                                                <br/>
+                                                                • No suprimir, eludir, o manipular el copyright (derechos de autor) y demás datos que identifican los derechos del Ministerio de Agricultura y Desarrollo Rural.
+                                                                <br/>
+                                                                • No emplear los contenidos y, en particular, la información de cualquier otra clase obtenida a través del Ministerio o de los servicios, para emitir publicidad.
+                                                                <br/>
+                                                                • TECNODETERGENTES DE COLOMBIA  no será responsable por el uso indebido que hagan los usuarios del contenido de su página Web.
+                                                                <br/>
+                                                                • El visitante o usuario de la página Web se hará responsable por cualquier uso indebido, ilícito o anormal que haga de los contenidos, información o servicios de la página Web de TECNODETERGENTES DE COLOMBIA.
+                                                                <br/>
+                                                                El visitante o usuario del sitio, directa o por interpuesta persona, no atentará de ninguna manera contra la página Web del TECNODERTENGES DE COLOMBIA, contra su plataforma tecnológica, contra sus sistemas de información ni tampoco interferirá en su normal funcionamiento.
+                                                                <br/>
+                                                                • El visitante o el usuario del sitio, no alterará, bloqueará o realizará cualquier otro acto que impida mostrar o acceder a cualquier contenido, información o servicios del sitio Web de TECNODETERGNES DE COLOMBIA  o que estén incorporados en las páginas Web vinculadas a la de TECNODETERGENTES DE COLOMBIA.
+                                                                <br/>
+                                                                • El visitante o el usuario de la página Web de TECNODETERGENTES DE COLOMBIA  no enviará o transmitirá en este sitio Web o hacia el mismo, a otros usuarios o a cualquier persona, cualquier información de alcance obsceno, difamatorio, injuriante, calumniante o discriminatorio contra TECNODETERGENTES DE COLOMBIA, contra sus funcionarios o contra los responsables de la administración de la página Web. 
+                                                                <br/>
+                                                                • El visitante o el usuario de la página Web de TECNODETERGENTES DE COLOMBIA, no incurrirá en y desde el mismo, en conductas ilícitas como daños o ataques informáticos, interceptación de comunicaciones, infracciones al derecho de autor, uso no autorizado de terminales, usurpación de identidad, revelación de secretos o falsedad en los documentos.
+                                                                <br/><br/>
+                                                                3. Privacidad
+                                                                TECNODETERGENTES DE COLOMBIA se compromete a salvaguardar la privacidad de la información personal del Usuario obtenida a través de la página Web de la entidad, para lo cual adopta una política de confidencialidad de acuerdo con lo que se establece más adelante.
+                                                                Se entiende por información personal aquella suministrada por el Usuario para el registro, la cual incluye datos como nombre, identificación, edad, género, dirección, correo electrónico y teléfono.
+                                                                <br/>
+                                                                El Usuario reconoce que el ingreso de información personal, lo realiza de manera voluntaria y ante la solicitud de requerimientos específicos por TECNODETERGENTES DE COLOMBIA para realizar un trámite, presentar una queja o reclamo, o para acceder a los mecanismos interactivos.
+                                                                <br/>
+                                                                Con ocasión de un trámite o servicio desarrollado por medios Electrónicos, la Entidad podrá solicitar información a los Usuarios del Sitio Web y la tratara con todas las garantías legales y de seguridad que impone la Constitución Política, las normas aplicables a la protección de datos de carácter personal y demás normas concordantes. La solicitud de información se hace siempre para que el Usuario la suministre de manera voluntaria.
+                                                                <br/>
+                                                                TECNODETERNGES DE COLOMIBA  se compromete a no ceder, vender, ni a compartir los datos recibidos en el Sitio Web con terceros sin su aprobación expresa. Las entidades adscritas no se considerarán terceros para estos efectos. Así mismo, TECNODETERGENTES DE COLOMBIA cancelará o rectificará los datos cuando resulten inexactos, incompletos o hayan dejado de ser necesarios o pertinentes para su finalidad.
+                                                                <br/>
+                                                                El Usuario Registrado se compromete a notificar a la Cámara de Comercio de Bogotá, en forma inmediata y por medio fehaciente, cualquier uso no autorizado de su clave.
+                                                                <br/><br/>
+                                                                4. Información y sitios Web de terceros
+                                                                La página Web puede ofrecer hipervínculos o acceso a páginas Web y contenidos de otras personas o entidades, con el  propósito de informar al Usuario sobre la existencia de otras fuentes susceptibles de ampliar los contenidos que ésta ofrece, o que guardan relación con aquéllos. TECNODETERGNES DE COLOMBIA no controla, refrenda ni garantiza el contenido incluido en dichos sitios, tampoco se responsabiliza del funcionamiento o accesibilidad de las páginas Web vinculadas; ni sugiere, invita o recomienda la visita a las mismas, por lo que tampoco será responsable del resultado obtenido.
+                                                                El Usuario acepta que la entidad no es responsable de ningún contenido, enlace asociado, recurso o servicio relacionado con el sitio de un tercero. Asimismo, el Usuario acepta que TECNODETERGENTES DE COLOMBIA no será responsable de ninguna pérdida o daño de cualquier tipo que se derive del uso que se realice de los contenidos de un tercero.
+                                                                <br/>
+                                                                TECNODETERGENTES DE COLOMBIA  no se responsabiliza por cualquier consecuencia derivada del ingreso indebido de terceros a la base de datos y/o por alguna falla técnica en el funcionamiento y/o conservación de datos en el sistema en cualquiera de los menús de su página Web.
+                                                                <br/>
+                                                                Igualmente, TECNODETERGNES DE COLOMBIA podrá garantizar la disponibilidad de los servicios en línea y de la información que los usuarios requieran en determinado momento. Tampoco incurrirá en responsabilidad con el usuario o terceros, cuando su página Web no se encuentre disponible.
+                                                                <br/>
+                                                                TECNODETERGENTES DE COLOMBIA  no responderá en ningún caso y bajo ninguna circunstancia, por los ataques o incidentes contra la seguridad de su página Web o contra sus sistemas de información; o por cualquier exposición o acceso no autorizado, fraudulento o ilícito a su página Web y que puedan afectar la confidencialidad, integridad o autenticidad de la información publicada o asociada con los contenidos y servicios que se ofrecen en ella.
+                                                                <br/><br/>
+                                                                5. Responsabilidad por la información contenida
+                                                                Debido a que en la actualidad los medios técnicos no permiten garantizar la absoluta falta de injerencia de la acción de terceras personas en las páginas Web, TECNODETERGNES DE COLOMBIA de ninguna manera asegura la exactitud y/o veracidad de todo o parte de la información contenida en su página, ni su actualización, ni que dicha información haya sido alterada o modificada en todo o en parte, luego de haber sido publicada en la página, ni cualquier otro aspecto o característica de lo publicado en el sitio o en los enlaces, respectivamente.
+                                                                <br/>
+                                                                TECNODETERGENTES DE COLOMBIA no controla ni garantiza la ausencia de virus ni de otros elementos en los contenidos que puedan producir alteraciones en su sistema informático (software y hardware) o en los documentos electrónicos y ficheros almacenados en su sistema informático.
+                                                                <br/><br/>
+                                                                6. Ley aplicable y jurisdicción
+                                                                <br/>
+                                                                1.  El usuario no podrá manifestar ante TECNODETERGENTES DE COLOMBIA o ante una autoridad judicial o administrativa, la aplicación de condición, norma o convenio que no esté expresamente incorporado en las presentes condiciones de uso.
+                                                                <br/>
+                                                                2.  Estas condiciones serán gobernadas por las leyes de la República de Colombia, en los aspectos que no estén expresamente regulados en ellas. 
+                                                                <br/>
+                                                                3.  Si cualquier disposición de estas condiciones pierde validez o fuerza obligatoria, por cualquier razón, todas las demás disposiciones, conservan su fuerza obligatoria, carácter vinculante y generarán todos sus efectos.
+                                                                <br/>
+                                                                4.  Para cualquier efecto legal o judicial, el lugar de las presentes condiciones es la ciudad de Bogotá, República de Colombia, y cualquier controversia que surja de su interpretación o aplicación se someterá a los jueces de la República de Colombia.
+
+
+
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </p>
+                                            <!-- FIN SEGUNGP -->
+
+                                            <p>
+                                                <a  class="text-light" href="html/error/error404/index.html">BLOG</a>
+                                            </p>
+                                            <p>
+                                                <a  class="text-light" href="html/error/error404/index.html">PROYECTOS</a>
+                                            </p>
+                                        </ul>
+                                    </div>
+                                </hr>
+                                <!--/.Second column-->
+
+                                <hr class="clearfix w-100 d-md-none">
+
+                                    <!--Third column-->
+                                    <div class="col-md-4 col-lg-3">
+                                        <h5 class="text-uppercase mb-4 font-weight-bold text-light">Dirección</h5>
+                                        <!--Info-->
+                                        <p class="text-light">
+                                            <i class="fa fa-home mr-3 text-light"></i> Cra 17 # 39A -17 Sur</p>
+                                        <p class="text-light">
+                                            <i class="fa fa-envelope mr-3 text-light"></i> info@exam.com</p>
+                                        <p class="text-light">
+                                            <i class="fa fa-phone mr-3 text-light"></i> + 031 732 687 4</p>
+                                        <p class="text-light">
+                                            <i class="fa fa-print mr-3 text-light"></i> + 01 000 000 00</p>
+
+                                    </div>
+                                </hr>
+                                <!--/.Third column-->
+
+                                <hr class="clearfix w-100 d-md-none">
+
+                                    <!--Fourth column-->
+
+
+                                    <div class="col-md-2 col-lg-2 text-center">
+                                        <h5 class="text-uppercase mb-4 font-weight-bold text-light">SIGUENOS EN </h5>
+
+
+                                        <!--Social buttons-->
+                                        <div class="  mt-2 ">
+                                            <!--Facebook-->
+                                            <a  href="https://es-la.facebook.com/" class="  btn btn-floating  btn-facebook text-dark" >
+                                                <i class="fa fa-facebook"></i> 
+                                            </a>
+                                            <!--Twitter-->
+                                            <a  href="https://twitter.com/?lang=es" class="  btn btn-floating  btn-twitter text-dark">
+                                                <i class="fa fa-twitter"></i> 
+                                            </a>
+                                            <!--Google +-->
+                                            <a  href=" https://www.google.com" class="btn btn-floating  btn-google text-dark">
+                                                <i class="fa fa-google"></i> 
+                                            </a>
+                                            <!--Dribbble-->
+                                            <a href="https://www.instagram.com/?hl=es-la" class="btn btn-floating  btn-instagram text-dark" >
+                                                <i class="fa fa-instagram"></i> 
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+
+
+
+                                </hr>
+
+                                <!--Copyright-->
+
+
+                                <div class="  ftbg acol1 footer-copyright py-3 text-center text.ligth ">
+                                    © 2018 Copyright: 
+                                    <a  class="acol" href="index.html "> Bussean.com </a>
+                                </div>
+
+
+                                <!--/.Copyright-->
+
+
+                                <script src="js/jquery-3.3.1.min.js"></script>
+                                <script src="js/popper.min.js"></script>
+                                <script src="js/bootstrap.min.js"></script>
+                                <script src="js/Botones.js"></script>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
     </h:body>
-</html>
+</html> 
 

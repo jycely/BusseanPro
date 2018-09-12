@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <h:head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/bootstrap-social.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" href="resources/resources/img/logo1.png"/>
+        <link href="resources/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/estilo.css" rel="stylesheet" type="text/css"/>
+        <title>Bussean</title>
+    </h:head>
+    <h:body>
+        <div class=" container-fluit ">
+
+
+            <!-- navegacion -->
+            <div class="row">
+
+
+                <div class="col-12">
+                    <nav class="  fijo row borde navbar  navbar-expand-lg navbar-light bg-light ">
+
+                        <a class="navbar-brand" href="../../index.html  ">
+                            <img src="resources/img/logo1.png"  class="logo d-inline-block align-top" alt=""/>
+                            Bussean
+                        </a>
+
+
+                        <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+
+                        <div  class="collapse navbar-collapse justify-content-end" id="navbarText"> 
+                            <ul class="c  menu  navbar-nav  ">
+                                <li class="  nav-item ">
+                                    <a class=" nav-link" href="../../index.html">Inicio </a>
+                                </li>
+                                <li class="  nav-item">
+                                    <a class="  nav-link" href="../acercaNosotros/index.html">Acerca de Nosotros</a>
+                                </li>
+                                <li class=" nav-item active">
+                                    <a class=" nav-link" href="index.html">Contactanos</a>
+                                </li>  
+
+                                <li class=" nav-item"> 
+                                    <a href="../ingresa/iniciaIngresa/index.html" class=" nav-link">Ingresa</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- HEADER -->
+
+            <div class="container-fluit">
+                <div class="  header row ">
+                    <div class=" gm  col-xm-12 col-md-12 col-lg-6">
+                        <div class="iframe">
+                            <iframe width="100%" height="100%;" frameborder="0" style="border:0" src="img/gmap.JPG" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class=" col-xm-12 col-md-12 col-lg-6">
+                        <form action="#" id="frm_contacto" class=" forCon columna contact-form" method="post">
+                            <h3 class="header-title txt-dark"> Contactanos </h3>
+                            <hr>
+                                <div class="col-sm-12" id="parent">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="nombre" name="nm" placeholder="Nombre"  autofocus=""/>
+                                    </div>
+                                    <div class="form-group form_left">
+                                        <input type="email" class="form-control" id="email" name="em" placeholder="Correo electronico"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <!--<input type="text" class="form-control" id="celar" jsf="return event.charCode >= 48 || event.charCode <= 57" maxlength="10" placeholder="Telefono">-->
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="5" id="comentario"  placeholder="Escriba aqui su mensaje..." ></textarea>
+                                        <button id="enviar" class="btn btn-success  btn-block">  Enviar </button>
+                                    </div>
+                                </div>
+                            </hr>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class=" mar_gi row">
+                        <div class="col-xs-12 col-sm-12 col-lg-4">
+                            <div class="box">             
+                                <div class="icon">
+                                    <div class="image"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                    <div class="info">
+                                        <h3 class="title">EMAIL</h3>
+                                        <p>
+                                            <i class="fa fa-envelope" aria-hidden="true"></i> tecnodetergentesdecolombia@gmail.com
+                                            <br>
+                                            </br>
+                                            <i class="fa fa-globe" aria-hidden="true"></i> www.Bussean.com
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-lg-4">
+                            <div class="box">             
+                                <div class="icon">
+                                    <div class="image"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+                                    <div class="info">
+                                        <h3 class="title">CONTACT</h3>
+                                        <p>
+                                            <i class="fa fa-mobile" aria-hidden="true"></i> (+57)- 7326874
+                                            <i class="fa fa-mobile" aria-hidden="true"></i> (+57)-300000000
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-lg-4">
+                            <div class="box">             
+                                <div class="icon">
+                                    <div class="image"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                    <div class="info">
+                                        <h3 class="title">UBICACION</h3>
+                                        <p>
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i> Soacha-Cundinamarca 
+                                            "Via cota", Kilometro - 4.
+                                         Direccion: Cra 17 # 39A -17 Sur
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>        
+            </div>         
+        </div>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/sweetalert.min.js"></script>
+        <script src="js/cont-ing.js"></script>
+    </h:body>
+</html>

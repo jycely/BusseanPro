@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <link rel="shortcut icon" href="resources/resources/img/logo1.png"/>
+        <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/bootstrap-social.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/sweetalert.min.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/estilo.css" rel="stylesheet" type="text/css"/>
+
+        <title>Bussean</title>
+
+    </h:head>
+    <h:body>
+
+        <div class="container-fluit">
+            <div class=" row">
+                <div class="  col-12">
+                    <!-- Just an image -->
+                    <nav class="form1 row navbar navbar-light bg-light">
+                        <a class="navbar-brand" href="../../../index.html">
+                            <img src="img/logo1.png" width="30" height="30" alt=""/>Bussean
+                        </a>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class=" colu  col-12">
+                    <div class="  mdl modal-lg modal-md ">
+                        <div class="mdl modal-content">
+                            <div class="modal-header">
+
+                                <h3 class="modal-title" >Ingresar
+                                </h3>
+                            </div>
+                            <center>
+                                <div class="  row">
+                                    <div class=" col-xs-12 col-lg-6">
+                                        <form id="loginForm" name="form1" method="POST" action=" " class="  sp col-12" >
+                                            <div class="form-group">
+                                                <label for="nombreUsuario" class="control-label">Usuario</label>
+                                                <input class="form-control" type="number" placeholder="Documento" jsf:value="#{loginManagedBean.usuario.cedula}" jsf:required="true" jsf:requiredMessage="Campo Documento Obligatorio"/><br/>
+                                                <span class="help-block"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password" class="control-label">Contraseña</label>
+                                                <input class="form-control" type="password" placeholder="Clave" jsf:value="#{loginManagedBean.usuario.clave}" jsf:required="true" jsf:requiredMessage="Campo Contraseña Obligatorio"/><br/>
+                                                <span class="help-block"></span>
+                                            </div>
+                                            <!--<div id="loginErrorMsg" class="alert alert-error hide">Error usuario o contraseña</div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="recordar"/> Recordarme <small id="red">(Si es tu computador privado)</small> <br/>
+                                                </label>
+    
+                                            </div>-->
+                                             <button class="btn btn-lg btn-primary btn-block" type="submit" jsf:action="#{loginManagedBean.iniciarSesion()}">
+                                            Ingresar</button>
+                                            <!--<button type="submit" class="  btn btn-success btn-block " jsf:action="#{loginManagedBean.iniciarSesion()}">Ingresar</button>
+                                            <button type="button"  id="btn_in" class="   btn btn-secondary btn-block " data-toggle="modal"
+                                                    data-target="#rec_con">Olvidaste tu contraseña?</button>-->
+                                        </form>
+                                        <br></br>
+
+                                    </div>
+                                </div>
+                            </center>
+                            <!--<div class=" form2 col-xs-12 col-lg-6">
+                                <p class="lead">Registrate ahora  <span class="text-success">GRATIS</span></p>
+                                <ul class="list-unstyled" style="line-height: 2">
+                                    <li><span class="fa fa-check text-success"></span> Revisa todas tus ordenes</li>
+                                    <li><span class="fa fa-check text-success"></span> Envio rapido</li>
+                                    <li><span class="fa fa-check text-success"></span> Guarda tus favoritos</li>
+                                    <li><span class="fa fa-check text-success"></span> Pago en efectivo</li>
+                                    <li><span class="fa fa-check text-success"></span> Descuento 1er compra <small>(Solo nuevos cliente)</small></li>
+
+                                </ul>
+                                <p><a href="../registrar/index.html" id="btnacr" class="  btn btn-info btn-block">Acepto, Registrarme ahora!</a></p>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="rec_con" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Recuperar contraseña</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+
+                    </div>
+                    <div class="modal-body">
+                        <form id="frmResta">
+                            <h3> <i class="fa fa-lock "></i> Restablecer contraseña</h3>
+                            <p>Ingrese su dirección  de email,nosotros le enviaremos su contraseña  para restablecer la cuenta <!-- Enter your email address we will sent you the password reset link. --></p>
+                            <div class="form-group">
+                                <input type="email" name="email" id="emailr" class="form-control input-lg" placeholder="Correo electronico" tabindex="4"/><br/>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12">
+                                    <input type="submit" value="Restablecer" id="btnResta" class="btn btn-success btn-block btn-lg"/><br/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/cont-ing.js"></script>
+        <script src="js/sweetalert.min.js"></script>
+    </h:body>
+</html>

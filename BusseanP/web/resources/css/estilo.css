@@ -1,0 +1,884 @@
+
+
+.container-fluit {
+
+  max-width:  1334.2px;
+  background-color: rgba(255,255,255,.7);
+  margin:0;
+  padding: 0;
+  
+}
+
+.fijo {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  margin: auto;
+}
+
+.borde {
+
+  border-bottom:  2px solid rgba(14,168,164,.9);
+}
+
+
+.columna {
+
+  border:  1px solid #666;
+}
+
+
+/* navegacion */
+.navbar-brand{
+  margin-left: 1.3%;
+}
+
+
+
+
+.logo {
+
+   width: 30px;
+   height:  35px;
+}
+
+
+nav h1{
+   color: rgba(0,0,0,.8);
+   font-size:   1.3rem;
+   
+
+}
+
+
+
+.bg-1 {
+  
+  background-color: rgba(2,115,115,.9);
+
+ }
+ .bg-2 {
+  background-color: rgba(3,140,115,.9);
+
+ }
+ .bg-3 {
+  background-color: rgba(18,164,123,.9);
+
+ }
+ .bg-4  {
+  background-color: rgba(14,181,117,.9);
+
+ }
+
+
+/*  header */
+
+.header {
+
+
+  background-image: url(../img/Clean.jpg);
+  height: 500px;
+  background-size:100% 100%;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+
+
+
+
+.colu {
+
+  border:1px solid rgba(255,255,255,1);
+
+}
+.header .row {
+  
+  height: 33.3%;
+  
+}
+
+.inf1 {
+  margin-top: 0.4%;
+  text-align: center;
+  color:rgba(255,255,255,1);
+}
+.inf {
+  margin-top: 10%;
+  text-align: center;
+  color:rgba(255,255,255,1);
+}
+
+.btnhe{
+  margin-top:10%;
+margin-left: 35%;
+  width: 30%;
+  height: 30%;
+  background-color: rgba(14,181,117,.6);
+  color:rgba(255,255,255,1);
+  font-size: 1.1rem;
+}
+.btnhe:hover {
+  background-color: rgba(14,181,117,1);
+}
+
+
+
+
+/* portafolio */
+
+
+.portafolio {
+  background-color:  rgba(0,0,0,0,0.02);
+  margin-right: 4%;
+  margin-left: 5%;
+  height: 480px;
+
+ }
+ .portafolio img{
+  height: 270px;
+ }
+
+
+
+
+
+
+.p1 {
+  height: 88%;
+   
+} 
+.p2{
+  height: 12%;
+
+}
+
+
+.prepod {
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+ 
+ .catalogo{
+  margin: auto;
+}
+ 
+.btnVerMas{
+   margin-top:1%;
+margin-left: 45%; 
+  text-align: center;
+}
+
+
+  
+
+.sss {
+
+  background-color: blue;
+}
+
+/* FOOTER */ 
+
+.col {
+  text-decoration: none;
+  color:red;
+}
+
+.ftbg {
+  background-color:rgba(62,69,81,1)
+}
+
+.footer-copyright {
+  width: 100%;
+}
+
+.acol{
+
+  color: rgba(255,255,255,.9);
+}
+.acol1{
+
+  color: rgba(255,255,255,.5);
+}
+footer .bg {
+  background-color: red;
+}
+
+
+.mt-2 a {
+ width: 45px;
+  height: 45px;
+  padding: 10px 14px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 5px;
+
+}
+
+
+
+
+
+
+         
+
+
+
+
+
+
+/* MEDIA QUERY ------------ */
+
+
+
+  /* fin del media */
+
+
+
+
+
+
+@media screen and (min-width: 940px) and (max-width:  1000px) {   
+.header{
+    margin-left: 0%;
+    margin-top: 1.5%;
+    background-size: 90% 100%;
+
+  }
+ .portafolio {
+ 
+  height: 1000px;
+ }
+ .p1 {
+  height: 95%;
+   
+} 
+.p2{
+  height: 5%;
+
+}
+
+
+
+ .btnVerMas{
+   margin-top:1%;
+   margin-left: 46%; 
+   text-align: center;
+}
+
+
+
+
+/* fin del media */
+  
+}
+
+
+@media screen and (min-width: 769px) and (max-width:  939px){
+.inf1 {
+  
+  text-align: center;
+  color:rgba(255,255,255,1);
+}
+.inf {
+  margin-top: 8%;
+  text-align: center;
+  color:rgba(255,255,255,1);
+}
+.portafolio {
+ 
+  height: 970px;
+
+ }
+
+  .portafolio img{
+  height: 270px;
+ }
+
+ .p1 {
+  height: 93%;
+   
+} 
+.p2{
+  height: 7%;
+
+}
+
+ .btnVerMas{
+   margin-top:2%;
+margin-left:  43%; 
+  text-align: center;
+}
+
+
+/* fin del media -*/
+
+}
+
+
+@media screen and (min-width: 578px) and (max-width:  768px){
+.inf1 {
+  
+  text-align: center;
+  color:rgba(255,255,255,1);
+}
+.inf {
+  margin-top: 8%;
+  text-align: center;
+  color:rgba(255,255,255,1);
+}
+.portafolio {
+  
+  height: 1330px;
+   margin-top: 4%;
+ }
+
+
+ .p1 {
+  height: 95%;
+   
+} 
+.p2{
+  height: 5%;
+
+}
+
+
+
+ .btnVerMas{
+   margin-top:2%;
+margin-left: 42%; 
+  text-align: center;
+}
+
+
+
+}
+
+@media screen and (min-width: 200px) and (max-width:  576px) {
+ 
+
+.btnhe{
+  margin-top:30%;
+margin-left: 1%;
+  width: 120px;
+  height: 30%;
+
+}
+
+.inf1 {
+  
+  text-align: center;
+  color:rgba(255,255,255,1);
+}
+.inf {
+  margin-top: 5%;
+  text-align: center;
+  color:rgba(255,255,255,1);
+}
+ .portafolio {
+
+  margin-top: 4%;
+  height: 1300px;
+ }
+
+ .p1 {
+  height: 95%;
+   
+} 
+.p2{
+  height: 5%;
+
+} 
+
+
+
+
+
+ .btnVerMas{
+   margin-top:2%;
+margin-left: 38%; 
+  text-align: center;
+}
+
+
+
+
+}
+
+
+/* ------------------------ */
+
+#vol{
+  display: block;
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  
+  z-index: 3;
+}
+
+#logo {
+  position: relative;
+  left: 50px;
+  
+  width: 12%;
+  height: 60px;
+  background-color: transparent;
+  float: left;
+}
+#logo #imgl {
+  display: block;
+  width: 30%;
+  height: 100%;
+  background-color: transparent;
+  float: left;
+  padding-top: 6%;
+  padding-left: 2%; 
+
+}
+
+#logo #imgl img {
+  width: 25%;
+  height:80%;
+  float: left;
+
+}
+
+
+#logo h1{
+  display: block;
+  float: left;
+  width: 70%;
+  height: 100%;
+  background-color: transparent;
+  color:rgba(0,0,0,.8);
+  float: left;
+  font-size: 1.8rem;
+  padding-top: 8%;
+  
+}
+
+/*  fin logo -------------- */
+
+#ops{
+ width: 33%;
+ height: 59px;
+ background-color: transparent;
+ float: right;
+ margin-right: 13px;
+ 
+ 
+ 
+}
+
+#ops ul { 
+  list-style: none;
+  
+
+ }
+
+ #ops .opss {
+   display:block;
+   width:25%;
+   height: 59px;
+   background-color: transparent; 
+   float: left;
+   position:none;
+ }
+
+ #ops .opss a {
+  display: block;
+  width: 100%;
+  height: 59px;
+  text-decoration: none;
+  color:rgba(255,255,255,.9);
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 15%; 
+
+ }
+
+ #ops .opss #op2 {
+  padding-top: 5%;
+ }
+
+
+
+ #aside{
+   width: 98%;
+   height: 350px;
+   background: url("../img/1.jpg");
+   background-repeat: none;
+   background-size: 100% 350px;
+   position: relative;
+   top:6%;
+   left: 1%;
+   z-index: -1;
+   float: left;
+   margin:auto;
+ }
+
+ 
+  
+ #opaco{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18,164,123,.1);
+  float: left;
+  
+ } 
+
+#ops .opss #op1:hover {
+  background-color: rgba(2,115,115,.7);
+
+ }
+ #ops .opss #op2:hover {
+  background-color: rgba(3,140,115,.7);
+
+ }
+ #ops .opss #op3:hover {
+  background-color: rgba(18,164,123,.7);
+
+ }
+ #ops .opss #op4:hover {
+  background-color: rgba(14,181,117,.7);
+
+ }
+
+ #aside1{
+  
+   width: 98%;
+   height: 300px;
+   position: relative;
+   background-color: rgba(255,255,255,.4);
+   top:7%;
+   left: 1%;
+   z-index: 0;
+   float: left;
+
+ }
+
+  /*#tem1{
+    display: block;
+    width: 20%;
+    height: 80%;
+    background-color: rgba(2,115,115,.8);
+    float: left;
+    margin-left: 10%;
+    margin-top: 2%;
+  }*/
+
+  
+
+#tem{
+   width: 20%;
+    height: 80%;
+    background-color:4 ;
+    float: left;
+    margin-left: 10%;
+    margin-top: 2%;
+    z-index: 0; 
+}
+
+#tem1{
+   width: 20%;
+    height: 80%;
+    background-color:4 ;
+    float: left;
+    margin-left: 10%;
+    margin-top: 2%;
+    z-index: 0; 
+}
+#tem2{
+   width: 20%;
+    height: 80%;
+    background-color:4 ;
+    float: left;
+    margin-left: 10%;
+    margin-top: 2%;
+    z-index: 0; 
+}
+
+
+
+
+
+#te {
+    display: block;
+    width: 100%;
+    height: 60%;
+    background-color: rgba(2,115,115,.9);
+    float: left;
+
+    
+  }
+
+  #te1 {
+    display: block;
+    width: 100%;
+    height: 60%;
+    background-color: rgba(3,140,115,.9);
+    float: left;
+    
+  }
+
+  #te2 {
+    display: block;
+    width: 100%;
+    height: 60%;
+    background-color: rgba(18,164,123,.9);
+    float: left;
+    
+  }
+
+  #te:hover {
+      background-color: rgba(2,115,115,.7);
+  }
+
+  #te1:hover {
+      background-color: rgba(3,140,115,.7);
+  }
+
+  #te2:hover {
+      background-color: rgba(18,164,123,.7);
+  }
+
+
+
+  .tee{
+     display: block;
+     width: 40%;
+     height: 65%;
+     /*background-color: rgba(3,140,115,.9);*/
+     background-color:rgba(0,0,0,.8);
+     margin:auto;
+     margin-top: 10%;
+     border-radius: 100%;
+  }
+
+  .tee1{
+     display: block;
+     width: 40%;
+     height: 65%;
+     /*background-color: rgba(18,164,123,.9);*/
+     background-color:rgba(0,0,0,.8);
+     margin:auto;
+     margin-top: 10%;
+     border-radius: 100%;
+  }
+
+  .tee2{
+     display: block;
+     width: 40%;
+     height: 65%;
+     background-color:rgba(0,0,0,.8);
+     margin:auto;
+     margin-top: 10%;
+     border-radius: 100%;
+  }
+
+  
+  .tee:hover{
+background-color:rgba(0,0,0,.6);
+}
+ .tee1:hover{
+background-color:rgba(0,0,0,.6);
+}
+.tee2:hover{
+background-color:rgba(0,0,0,.6);
+}
+
+
+  .t{
+    display: block;
+    width: 100%;
+    height: 40%;
+    background-color:rgba(0,0,0,.2 );
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color:rgba(0,0,0,.7);
+    padding-left: 2%;
+  }
+
+
+  .t p{
+
+    text-align: left;;
+
+  }
+  .t:hover{
+    background-color:rgba(0,0,0,.3 );
+  }
+
+
+/*#temm{
+   width: 20%;
+    height: 80%;
+    background-color: red;
+    float: left;
+    margin-left: 10%;
+    margin-top: 2%;
+    z-index: 0; 
+}
+
+.tem1 {
+    display: block;
+    width: 100%;
+    height: 60%;
+    background-color: blue;
+    float: left;
+    
+  }
+
+  .subtem{
+    display: block;
+    width: 100%;
+    height: 40%;
+    background-color: green;
+    float: left;
+  }*/
+
+
+ 
+
+  .subtem:active {
+    background-color: red;
+  }
+
+
+    #footer{
+   width: 100%;
+   height: 180px;
+   background-color: rgba(0,0,0,.6);
+   float: left;
+   position: relative;
+   top:8%;
+   position: relative;
+   
+  }
+
+  #footer #foot {
+    width: 100%;
+    height: 65px;
+    background-color: rgba(0,0,0,.4);
+    float: left;
+    padding:2%;
+    padding-left: 17%;
+    padding-right: 0;
+  }
+
+  #foot ul {
+   list-style: none;
+
+  }
+
+  #foot .lifo{
+   
+   display: block;
+   width: 20%;
+   height: 20px;
+   background-color: transparent;
+   color:rgb(255,255,255);
+   text-decoration: none;
+   float: left;
+   border-right: 1px solid rgba(255,255,255,.8);
+   text-align: center;
+   font-size: .83rem;
+  
+
+  }
+
+  #foot #lifo1{
+    border-left: 1px solid rgba(255,255,255,.8);
+  }
+
+  #red{
+    width: 67%;
+    height: 50%;
+    background-color:transparent;
+    float: left;
+    margin-left: 17%;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    padding-top: 1%;
+  }
+
+  #log2 {
+    width: 10%;
+    height: 99%;
+    background-color: transparent;
+    padding-left: 1px;
+    float: left;
+  }
+  #log2 a {
+    width: 100%;
+    height: 100%;
+    text-decoration:none;
+  }
+
+  #log2 img{
+    display: block;
+     width: 40px;
+    height: 40px;
+    float: left;
+    margin-left: 23%;
+  }
+  #log2 h1 {
+    display: block;
+    color:#fff;
+    float: left;
+    font-size: 1.4rem;
+    text-align:center;
+   
+  }
+
+  /* redessocilaes */
+  #social{
+    width: 30%;
+    height:45px;
+    float: right;
+    background-color:transparent;
+    margin-top: 1%;
+    margin-right: 1%;
+    
+  }
+  
+  #social h1{
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color:rgba(255,255,255,.8);
+    float: left;
+    padding-left:10%; ;
+    padding-top: 3%;
+  }
+
+  #social #reda{
+   width:50%;
+   height: 100%;
+   background-color: transparent;
+   float: left;
+   padding-top: 2%;
+  }
+
+  .spRed{
+    width:27%;
+    height:80%;
+    background-color: blue;
+    background-color: rgba(255,255,255,.7);
+    float: left;
+    margin-left: 4%;
+    border-radius: 99%;
+    margin-top : 1.5%;
+  }
+
+
+  /* finredessociales */

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <body>
+
+        <ui:composition template="./../../WEB-INF/template/template.xhtml">
+
+            <ui:define name="content">
+
+                    <h:form>
+                        <h1><h:outputText value="Create/Edit"/></h1>
+                        <p:panelGrid columns="2">
+                            <p:outputLabel value="Cedula:" for="cedula" />
+                            <p:inputText id="cedula" value="#{usuariosRegistrarManagedBean.usuario.cedula}" title="Cedula" required="true" requiredMessage="The Cedula field is required."/>
+                            <p:outputLabel value="Primer Nombre:" for="primerNombre" />
+                            <p:inputText id="primerNombre" value="#{usuariosRegistrarManagedBean.usuario.primerNombre}" title="PrimerNombre" required="true" requiredMessage="The PrimerNombre field is required."/>
+                            <p:outputLabel value="Segundo Nombre:" for="segundonombre" />
+                            <p:inputText id="segundonombre" value="#{usuariosRegistrarManagedBean.usuario.segundonombre}" title="Segundonombre" />
+                            <p:outputLabel value="Primer Apellido:" for="primerApellido" />
+                            <p:inputText id="primerApellido" value="#{usuariosRegistrarManagedBean.usuario.primerApellido}" title="PrimerApellido" required="true" requiredMessage="The PrimerApellido field is required."/>
+                            <p:outputLabel value="Segundo Apellido:" for="segundoApellido" />
+                            <p:inputText id="segundoApellido" value="#{usuariosRegistrarManagedBean.usuario.segundoApellido}" title="SegundoApellido" />
+                            <p:outputLabel value="Clave:" for="clave" />
+                            <p:inputText id="clave" value="#{usuariosRegistrarManagedBean.usuario.clave}" title="Clave" required="true" requiredMessage="The Clave field is required."/>
+                            <p:outputLabel value="Email:" for="email" />
+                            <p:inputText id="email" value="#{usuariosRegistrarManagedBean.usuario.email}" title="Email" required="true" requiredMessage="The Email field is required."/>
+                            <p:outputLabel value="Telefono:" for="telefono" />
+                            <p:inputText id="telefono" value="#{usuariosRegistrarManagedBean.usuario.telefono}" title="Telefono" required="true" requiredMessage="The Telefono field is required."/>
+                            <p:outputLabel value="Fidelizacion:" for="fidelizacion" />
+                            <p:inputText id="fidelizacion" value="#{usuariosRegistrarManagedBean.usuario.fidelizacion}" title="Fidelizacion" required="true" requiredMessage="The Fidelizacion field is required."/>
+                            <p:outputLabel value="Rol:" for="idRol" />
+                            <p:selectOneMenu id="idRol" value="#{usuariosRegistrarManagedBean.usuario.idRol}" required="true" requiredMessage="The IdRol field is required.">
+                                <f:selectItems value="#{rolManagedBean.listarRol()}" var="listRol" itemLabel="Seleccionar"/>
+                            </p:selectOneMenu>
+                        </p:panelGrid>
+                        <br/><br/>
+                        <center><h:commandButton class="btn btn-success" value="Registrar" action="#{usuariosRegistrarManagedBean.registroUser()}"/></center>
+                        <br/><br/>
+
+                    </h:form>
+                </f:view>
+
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
